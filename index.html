@@ -1,17 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <meta charset="utf-8">
+  <title>Ricardo Azuul's Github Dashboard</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+    <div id="page-container">
 
+        <div id="header-nav">
+            <div id="header">
+                <header>
+                    <h1>Ricardo Azuul's Github Dashboard</h1>
+                </header>
+            </div>
+
+            <div id="navigation">
+                <nav>
+                    <ul id="nav-elements">
+                      <li><a href="#">Stonks</a></li>
+                      <li><a href="#">Weather</a></li>
+                      <li><a href="#">Experimental</a></li>
+                      <li><a href="#">Todo</a></li>
+                      <li><a href="coding.html">Coding Links</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div id="content-wrap">
+            <section>
+                <h2>Stonks</h2>
+                <a href="https://www.google.com/finance/quote/GME:NYSE" target="_blank">GME</a>
+                <br>
+                <a href="https://www.google.com/finance/quote/BTC-EUR" target="_blank">BTC</a>
+            </section>
+
+            <section>
+                <h2>Weather</h2>
+
+                <a class="weatherwidget-io" href="https://forecast7.com/en/52d374d90/amsterdam/" data-label_1="AMSTERDAM" data-label_2="WEATHER" data-theme="original">AMSTERDAM WEATHER</a>
+                <script>
+                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                </script>
+            </section>
+
+            <section>
+                <h2>Experimental</h2>
+            </section>
+
+            <section>
+                <h2>Todo</h2>
+                <form>
+                    <input type="checkbox" id="11111111" checked />
+                    <label for="11111111"> Add todo</label>
+                    <br>
+                    <input type="checkbox" id="11111112" />
+                    <label for="11111112"> Add CSS</label>
+
+                </form>
+
+            </section>
+        </div>
+
+        <div id="footer" class="text-center">
+            <footer>
+                Version 0.12 - adjust title and header
+            </footer>
+        </div>
+
+
+    </div>
+
+</body>
 </html>
